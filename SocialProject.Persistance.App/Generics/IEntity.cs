@@ -1,4 +1,4 @@
-﻿namespace SocialProject.Persistance.App.Generics
+﻿namespace SocialProject.Persistence.App.Generics
 {
     public interface IEntity<TPrimaryKey>
     {

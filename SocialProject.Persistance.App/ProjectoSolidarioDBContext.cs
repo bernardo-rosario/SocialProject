@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using SocialProject.Persistance.App.Entities;
+using SocialProject.Persistence.App.Entities;
 
-namespace SocialProject.Persistance.App
+namespace SocialProject.Persistence.App
 {
     public partial class ProjectoSolidarioDBContext : DbContext
     {

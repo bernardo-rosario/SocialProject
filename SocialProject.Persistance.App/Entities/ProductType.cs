@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SocialProject.Persistance.App.Entities
+namespace SocialProject.Persistence.App.Entities
 {
     public partial class ProductType
     {

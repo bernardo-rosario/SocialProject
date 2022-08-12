@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SocialProject.Persistance.App.Generics
+namespace SocialProject.Persistence.App.Generics
 {
     public class RepositoryBase<T, TPrimaryKey> : IRepositoryBase<T, TPrimaryKey> where T : class, IEntity<TPrimaryKey>
     {
@@ -24,7 +24,7 @@ namespace SocialProject.Persistance.App.Generics
 
         public bool Delete(TPrimaryKey id)
         {
-            var entity =_dbSet.Remove(GetById(id));
+            var entity = _dbSet.Remove(GetById(id));
             return entity != null;
         }
 

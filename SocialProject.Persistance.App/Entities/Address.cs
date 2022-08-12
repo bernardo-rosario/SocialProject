@@ -1,8 +1,8 @@
-﻿using SocialProject.Persistance.App.Generics;
+﻿using SocialProject.Persistence.App.Generics;
 using System;
 using System.Collections.Generic;
 
-namespace SocialProject.Persistance.App.Entities
+namespace SocialProject.Persistence.App.Entities
 {
     public partial class Address : IEntity<int>
     {

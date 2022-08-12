@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SocialProject.Persistance.App.Generics
+namespace SocialProject.Persistence.App.Generics
 {
     public interface IRepositoryBase<T, TPrimaryKey> where T : class, IEntity<TPrimaryKey>
     {
