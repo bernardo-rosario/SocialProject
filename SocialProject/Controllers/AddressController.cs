@@ -19,9 +19,18 @@ namespace SocialProject.Controllers
 
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<Address>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(IEnumerable<Address>), (int)HttpStatusCode.NoContent)]
         public IActionResult GetAddresses()
         {
-            return Ok(_service.GetAddresses());
+            var addresses = _service.GetAddresses();
+            if (addresses.Any())
+            {
+                return Ok(addresses);
+            }
+            else
+            {
+                return NoContent();
+            }
         }
     }
 }
